@@ -92,6 +92,11 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_180x180.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_40x40.png" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_152x152.png" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_parrot.imageset\icon_parrot_512x512.png" />
+    <ImageAsset Include="Assets.xcassets\icon_parrot.imageset\icon_parrot_512x512 1.png" />
+    <ImageAsset Include="Assets.xcassets\icon_parrot.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\icon_parrot.imageset\icon_parrot_512x512 2.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
