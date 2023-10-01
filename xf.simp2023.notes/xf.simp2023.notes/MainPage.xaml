@@ -14,13 +14,17 @@
             </StackLayout>
             <StackLayout Grid.Row="1"
                          VerticalOptions="Center">
-                <Entry Text="User"/>
-                <Entry Text="Password"
+                <Entry x:Name="entryUser"
+                       Placeholder="User"/>
+                <Entry x:Name="entryPassword"
+                       Placeholder="Password"
                        Margin="0,15,0,0"/>
-                <Button Text="Log In"
+                <Button x:Name="btnLogIn"
+                        Text="Log In"
                        Margin="0,15,0,0"
                        BackgroundColor="#2F46E5"
-                       TextColor="White"/>
+                       TextColor="White"
+                       Clicked="Button_Clicked"/>
             </StackLayout>
             <StackLayout Grid.Row="2"
                          VerticalOptions="Start">
