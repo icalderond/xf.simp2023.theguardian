@@ -6,9 +6,77 @@
     xmlns:iOSSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     iOSSpecific:Page.UseSafeArea="True">
     <ContentPage.Content>
-        <Grid BackgroundColor="White"
-               HeightRequest="100"
-               WidthRequest="100">
+        <Grid RowDefinitions="*, *, *"
+              Padding="15,0">
+            <StackLayout Grid.Row="0" VerticalOptions="End">
+                <Image Source="icon_parrot" WidthRequest="100" HeightRequest="100"/>
+                <Label Text="Welcome" FontSize="Title" HorizontalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1"
+                         VerticalOptions="Center">
+                <Entry Text="User"/>
+                <Entry Text="Password"
+                       Margin="0,15,0,0"/>
+                <Button Text="Log In"
+                       Margin="0,15,0,0"
+                       BackgroundColor="#2F46E5"
+                       TextColor="White"/>
+            </StackLayout>
+            <StackLayout Grid.Row="2"
+                         VerticalOptions="Start">
+                <Label HorizontalOptions="Center"
+                       Margin="0,0,0,15">Or</Label>
+                <Grid ColumnDefinitions="*,*,*">
+                    <Frame Grid.Column="0"
+                           HasShadow="False"
+                           BackgroundColor="Blue"
+                           CornerRadius="15"
+                           BorderColor="Black"
+                           WidthRequest="60"
+                           HeightRequest="60"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Padding="0">
+                        <Label Text="F"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Grid.Column="1"
+                           HasShadow="False"
+                           BackgroundColor="Orange"
+                           CornerRadius="15"
+                           BorderColor="Black"
+                           WidthRequest="60"
+                           HeightRequest="60"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Padding="0">
+                        <Label Text="G"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Grid.Column="2"
+                           HasShadow="False"
+                           BackgroundColor="Gray"
+                           CornerRadius="15"
+                           BorderColor="Black"
+                           WidthRequest="60"
+                           HeightRequest="60"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           Padding="0">
+                        <Label Text="A"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               VerticalTextAlignment="Center"/>
+                    </Frame>
+                </Grid>
+            </StackLayout>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
