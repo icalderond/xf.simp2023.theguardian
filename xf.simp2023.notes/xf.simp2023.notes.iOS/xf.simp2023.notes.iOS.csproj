@@ -74,45 +74,24 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon1024.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
-      <Visible>false</Visible>
-    </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
-      <Visible>false</Visible>
-    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_76x76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_29x29.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_80x80 1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_20x20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_80x80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_120x120 1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_40x40 2.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_60x60.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_58x58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_40x40 1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_167x167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_120x120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_1024x1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_87x87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_58x58 1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_180x180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_40x40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\icon_parrot_152x152.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
