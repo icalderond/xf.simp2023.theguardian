@@ -2,8 +2,10 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="xf.simp2023.notes.MainPage"
+    x:Class="xf.simp2023.notes.Views.LoginPage"
     xmlns:iOSSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:viewModels="clr-namespace:xf.simp2023.notes.ViewModels"
+    x:DataType="viewModels:LoginViewModel"
     iOSSpecific:Page.UseSafeArea="True">
     <ContentPage.Content>
         <Grid RowDefinitions="*, *, *"
@@ -14,17 +16,17 @@
             </StackLayout>
             <StackLayout Grid.Row="1"
                          VerticalOptions="Center">
-                <Entry x:Name="entryUser"
-                       Placeholder="User"/>
-                <Entry x:Name="entryPassword"
+                <Entry Placeholder="User"
+                       Text="{Binding User}"/>
+                <Entry Text="{Binding Password}"
                        Placeholder="Password"
+                       IsPassword="True"
                        Margin="0,15,0,0"/>
-                <Button x:Name="btnLogIn"
-                        Text="Log In"
-                       Margin="0,15,0,0"
-                       BackgroundColor="#2F46E5"
-                       TextColor="White"
-                       Clicked="Button_Clicked"/>
+                <Button Text="Log In"
+                        Margin="0,15,0,0"
+                        BackgroundColor="#2F46E5"
+                        TextColor="White"
+                        Command="{Binding OnLoginCommand}"/>
             </StackLayout>
             <StackLayout Grid.Row="2"
                          VerticalOptions="Start">
@@ -81,7 +83,10 @@
                     </Frame>
                 </Grid>
             </StackLayout>
+            <ActivityIndicator Grid.RowSpan="3"
+                               IsRunning="{Binding IsBusy}"
+                               IsVisible="{Binding IsBusy}"
+                               Color="Orange"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
-
