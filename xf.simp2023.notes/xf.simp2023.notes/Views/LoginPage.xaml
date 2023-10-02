@@ -5,8 +5,14 @@
     x:Class="xf.simp2023.notes.Views.LoginPage"
     xmlns:iOSSpecific="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:viewModels="clr-namespace:xf.simp2023.notes.ViewModels"
+    xmlns:helpers="clr-namespace:xf.simp2023.notes.Helpers"
     x:DataType="viewModels:LoginViewModel"
     iOSSpecific:Page.UseSafeArea="True">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <helpers:InvertBooleanConverter x:Key="InvertBooleanConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid RowDefinitions="*, *, *"
               Padding="15,0">
@@ -15,7 +21,8 @@
                 <Label Text="Welcome" FontSize="Title" HorizontalOptions="Center"/>
             </StackLayout>
             <StackLayout Grid.Row="1"
-                         VerticalOptions="Center">
+                         VerticalOptions="Center"
+                         IsEnabled="{Binding IsBusy, Converter={StaticResource InvertBooleanConverter}}">
                 <Entry Placeholder="User"
                        Text="{Binding User}"/>
                 <Entry Text="{Binding Password}"
@@ -84,6 +91,8 @@
                 </Grid>
             </StackLayout>
             <ActivityIndicator Grid.RowSpan="3"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
                                IsRunning="{Binding IsBusy}"
                                IsVisible="{Binding IsBusy}"
                                Color="Orange"/>
