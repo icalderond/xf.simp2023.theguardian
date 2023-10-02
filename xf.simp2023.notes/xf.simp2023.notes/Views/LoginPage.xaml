@@ -11,6 +11,22 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             <helpers:InvertBooleanConverter x:Key="InvertBooleanConverter"/>
+            <Style x:Key="frameSocial" TargetType="Frame">
+                <Setter Property="HasShadow" Value="False"/>
+                <Setter Property="BorderColor" Value="Black"/>
+                <Setter Property="CornerRadius" Value="15"/>
+                <Setter Property="WidthRequest" Value="60"/>
+                <Setter Property="HeightRequest" Value="60"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="Padding" Value="0"/>
+            </Style>
+            <Style x:Key="labelSocial" TargetType="Label">
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
@@ -41,52 +57,22 @@
                        Margin="0,0,0,15">Or</Label>
                 <Grid ColumnDefinitions="*,*,*">
                     <Frame Grid.Column="0"
-                           HasShadow="False"
                            BackgroundColor="Blue"
-                           CornerRadius="15"
-                           BorderColor="Black"
-                           WidthRequest="60"
-                           HeightRequest="60"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           Padding="0">
+                           Style="{StaticResource frameSocial}">
                         <Label Text="F"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center"
-                               HorizontalTextAlignment="Center"
-                               VerticalTextAlignment="Center"/>
+                               Style="{StaticResource labelSocial}"/>
                     </Frame>
                     <Frame Grid.Column="1"
-                           HasShadow="False"
                            BackgroundColor="Orange"
-                           CornerRadius="15"
-                           BorderColor="Black"
-                           WidthRequest="60"
-                           HeightRequest="60"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           Padding="0">
+                           Style="{StaticResource frameSocial}">
                         <Label Text="G"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center"
-                               HorizontalTextAlignment="Center"
-                               VerticalTextAlignment="Center"/>
+                               Style="{StaticResource labelSocial}"/>
                     </Frame>
                     <Frame Grid.Column="2"
-                           HasShadow="False"
                            BackgroundColor="Gray"
-                           CornerRadius="15"
-                           BorderColor="Black"
-                           WidthRequest="60"
-                           HeightRequest="60"
-                           HorizontalOptions="Center"
-                           VerticalOptions="Center"
-                           Padding="0">
+                           Style="{StaticResource frameSocial}">
                         <Label Text="A"
-                               VerticalOptions="Center"
-                               HorizontalOptions="Center"
-                               HorizontalTextAlignment="Center"
-                               VerticalTextAlignment="Center"/>
+                               Style="{StaticResource labelSocial}"/>
                     </Frame>
                 </Grid>
             </StackLayout>
